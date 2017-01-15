@@ -1,0 +1,15 @@
+version: '2'
+services:
+  django:
+    image: greglebarbar/django
+    build:
+      context: djangoapp
+    expose: 
+      - "8000"
+  nginx:
+    image: greglebarbar/nginx
+    ports:
+      - "127.0.0.1:8888:80"
+    depends_on:
+      - "django"
+  
