@@ -15,7 +15,7 @@ sleep 10
 docker run -it                            \
            --name django                  \
            --net=epfl                     \
-           greglebarbar/vindubeaujolais bash 
+           greglebarbar/django bash 
 
 
 
